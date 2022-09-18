@@ -52,20 +52,25 @@ body {
 }
 
 .elementimg {
+  border-style: solid;
   border-color: 0e1b2a;
   transition-duration: 1s;
   aspect-ratio: 1;
   width: 100%;
   height: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .elementimg {
-    border-style: solid;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    border-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .row>* {
+    padding-right: 0px;
   }
 }
 
